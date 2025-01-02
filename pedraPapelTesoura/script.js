@@ -33,6 +33,13 @@ function game() {
         }, 1500)
        
     }
+    
+    function machineChoice() {
+        const op = ['pedra', 'papel', 'tesoura']
+        let choice = Math.floor(Math.random() * (2 + 1) + 0).toFixed(0)
+        return op[choice]
+    }
+
     function getResult(choiceItem) {
         const computerChoose = machineChoice()
         result.style.display = 'none'
@@ -115,12 +122,7 @@ function game() {
         }
 
     }
-    function machineChoice() {
-        const op = ['pedra', 'papel', 'tesoura']
-        let choice = Math.floor(Math.random() * (2 + 1) + 0).toFixed(0)
-        return op[choice]
-    }
-
+   
 
 }
 game()
